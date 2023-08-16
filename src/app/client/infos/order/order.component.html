@@ -1,0 +1,14 @@
+<div class="orderInfos">
+    <p>Order ID : {{ order.orderID }}</p>
+    <p>State : {{ order.orderState }}</p>
+    <p>Creation : {{ order.creationDateTime }}</p>
+    <p>Products :</p>
+    <div class="products">
+        <div *ngFor="let orderDetail of order.orderDetails">
+            <p>Product ID : {{ orderDetail.productID }}</p>
+            <p>Unit price : {{ orderDetail.unitPrice }}</p>
+            <p>Quantity : {{ orderDetail.quantity }}</p>
+        </div>
+    </div>
+</div>
+<hr />

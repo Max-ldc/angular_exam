@@ -1,0 +1,7 @@
+<div *ngIf="client$ | async as infosClient">
+    <h3>Email : {{ infosClient.email }}</h3>
+    <h3>Orders :</h3>
+    <div *ngFor="let order of infosClient.orders">
+        <app-order [order]="order"></app-order>
+    </div>
+</div>

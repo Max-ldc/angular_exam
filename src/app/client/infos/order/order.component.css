@@ -1,0 +1,14 @@
+p {
+    margin: 3px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    margin-left: 2vh;
+}
+
+.orderInfos {
+    margin-top: 2vh;
+}

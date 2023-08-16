@@ -1,0 +1,9 @@
+<div *ngIf="addresses$ | async as list" class="addressList">
+    <div *ngFor="let address of list">
+        <p>{{ address.streetLine1 }}</p>
+        <p *ngIf="address.streetLine2">{{ address.streetLine2 }}</p>
+        <p>{{ address.zipCode }}, {{ address.city }}</p>
+        <p>{{ address.phone }}</p>
+        <hr />
+    </div>
+</div>

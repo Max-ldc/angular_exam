@@ -1,0 +1,23 @@
+<form #monForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form">
+        <label for="streetLine1">First Street Line </label>
+        <input type="text" [(ngModel)]="streetLine1" required name="streetLine1" />
+
+        <label for="streetLine2">Second Street Line</label>
+        <input type="text" name="streetLine2" [(ngModel)]="streetLine2" />
+
+        <label for="zipCode">Zip Code</label>
+        <input type="number" name="zipCode" [(ngModel)]="zipCode" required />
+
+        <label for="city">City</label>
+        <input type="text" name="city" [(ngModel)]="city" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" [(ngModel)]="phone" required />
+    </div>
+
+    <button type="submit" [disabled]="!monForm.form.valid">Send</button>
+
+    <div [hidden]="!formSent" class="success">Message sent !</div>
+    <div [hidden]="monForm.form.valid" class="alert">Invalid form !</div>
+</form>

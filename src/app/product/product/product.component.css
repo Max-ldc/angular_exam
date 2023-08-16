@@ -1,0 +1,13 @@
+.productCard {
+    text-align: center;
+    width: 250px;
+    border: 1px solid brown;
+    margin: 1vh;
+    padding: 1vh;
+    border-radius: 30px;
+}
+
+.productCard h3,
+.productCard h5 {
+    margin: 5px;
+}

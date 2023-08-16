@@ -1,0 +1,5 @@
+<div class="productCard" (click)="handleClick()">
+    <h3>{{ product.name }}</h3>
+    <h5 [hidden]="!isCardOpen">Type : {{ product.productType }}</h5>
+    <span [hidden]="!isCardOpen" class="productDesc">{{ product.description }}</span>
+</div>
